@@ -1,0 +1,4 @@
+aaravlabs/
+backend/
+.env
+!.example.env
