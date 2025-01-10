@@ -1,0 +1,32 @@
+services:
+  # aaravlabs:
+  #   image: iamcoder18/aaravlabs:latest
+  #   restart: unless-stopped
+  #   ports:
+  #     - "3000:3000"
+  #   env_file: ".env"
+  #   depends_on:
+  #     - db
+  #   networks:
+  #     - aaravlabs-network
+  aaravlabsapi:
+    image: iamcoder18/aaravlabsapi:latest
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    env_file: ".env"
+    depends_on:
+      - db
+    networks:
+      - aaravlabs-network
+  db:
+    image: postgres
+    restart: unless-stopped
+    volumes:
+      - /var/lib/postgresql/data:/var/lib/postgresql/data
+    env_file: ".env"
+    networks:
+      - aaravlabs-network
+networks:
+  aaravlabs-network:
+    driver: bridge
