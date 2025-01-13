@@ -1,14 +1,14 @@
 services:
-  # aaravlabs:
-  #   image: iamcoder18/aaravlabs:latest
-  #   restart: unless-stopped
-  #   ports:
-  #     - "3000:3000"
-  #   env_file: ".env"
-  #   depends_on:
-  #     - db
-  #   networks:
-  #     - aaravlabs-network
+  aaravlabs:
+    image: iamcoder18/aaravlabs:latest
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file: ".env"
+    depends_on:
+      - db
+    networks:
+      - aaravlabs-network
   aaravlabsapi:
     image: iamcoder18/aaravlabsapi:latest
     restart: unless-stopped
