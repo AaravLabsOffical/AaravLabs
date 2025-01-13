@@ -6,7 +6,7 @@ This repository contains the deployment configuration for both the frontend and 
 
 ## Deploying
 
-Since all the code is containerized, you can deploy 
+Since all the code is containerized, you can deploy a production ready server in just 1 minute and 30 seconds.
 
 1. Clone the repository with `git clone https://github.com/AaravLabsOfficial/AaravLabs.git`
 2. `cd AaravLabs`
