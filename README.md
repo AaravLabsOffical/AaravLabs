@@ -8,7 +8,7 @@ This repository contains the deployment configuration for both the frontend and 
 
 Since all the code is containerized, you can deploy 
 
-1. Clone the repository with `git clone https://github.com/AaravLabsOfficial/AaravLabs`
+1. Clone the repository with `git clone https://github.com/AaravLabsOfficial/AaravLabs.git`
 2. `cd AaravLabs`
 3. Write your own env variables based on `.example.env`
 4. Deploy with `sudo docker compose up -d`
