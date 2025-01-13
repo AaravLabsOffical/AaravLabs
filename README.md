@@ -4,6 +4,15 @@ Aarav Labs is an innovative learning platform designed to help middle schoolers 
 
 This repository contains the deployment configuration for both the frontend and backend of the application. 
 
+## Deploying
+
+Since all the code is containerized, you can deploy 
+
+1. Clone the repository with `git clone https://github.com/AaravLabsOfficial/AaravLabs`
+2. `cd AaravLabs`
+3. Write your own env variables based on `.example.env`
+4. Deploy with `sudo docker compose up -d`
+
 ## Building
 
 The recommended way to deploy AaravLabs is using the `docker-compose.yaml` file provided in this repository. This file will build and deploy both the frontend and backend applications.
